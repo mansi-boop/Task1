@@ -1,0 +1,149 @@
+/* General body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #f9f9f9; /* Light grey background */
+}
+
+/* Header styling */
+header {
+    background: linear-gradient(to right, #000000, #5c5b5b); /* Black gradient */
+    color: white;
+    text-align: center;
+    padding: 2em 0; /* Top and bottom padding */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Large font size for the main heading */
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2em; /* Medium font size for the subheading */
+    font-style: italic; /* Italic font style */
+}
+
+/* Container styling for centering content */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em 0; /* Top and bottom padding */
+}
+
+/* Flexbox styling for image container */
+.container .img-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Section headings styling */
+h2 {
+    border-bottom: 2px solid #4facfe; /* Bottom border with blue color */
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    font-size: 1.8em; /* Large font size for section headings */
+}
+
+/* Paragraph styling */
+p {
+    line-height: 1.6; /* Increased line height for better readability */
+}
+
+/* Unordered list styling */
+ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+/* List item styling */
+ul li {
+    background: #e6f7ff; /* Light blue background */
+    margin: 0.5em 0; /* Vertical margin */
+    padding: 0.5em; /* Padding inside each list item */
+    border-left: 5px solid #4facfe; /* Left border with blue color */
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+/* Input and button styling */
+input, button {
+    padding: 0.7em; /* Padding inside input and button */
+    margin-bottom: 1em; /* Bottom margin */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Button styling */
+button {
+    background: #4facfe; /* Blue background */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s; /* Smooth background transition on hover */
+}
+
+button:hover {
+    background: #00c6ff; /* Lighter blue background on hover */
+}
+
+/* Footer styling */
+footer {
+    background-color: #333; /* Dark grey background */
+    color: white; /* White text color */
+    text-align: center;
+    padding: 1em 0; /* Top and bottom padding */
+}
+
+/* Image styling */
+img {
+    width: 32%; /* 32% width of the container */
+    height: 20%; /* Fixed height */
+}
+
+/* Responsive image styling */
+.responsive-img {
+    max-width: 100%; /* Full width */
+    height: auto; /* Auto height to maintain aspect ratio */
+    display: block; /* Block display */
+    margin: 1em 0; /* Vertical margin */
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em; /* Smaller font size for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Smaller font size for section headings */
+    }
+
+    header, footer {
+        padding: 1em 0; /* Less padding for header and footer */
+    }
+
+    .container {
+        padding: 0.5em; /* Less padding for container */
+    }
+
+    /* Flex container for images */
+    .img-flex {
+        flex-direction: column; /* Stack images vertically on small screens */
+        align-items: center;
+    }
+
+    img {
+        width: 100%; /* Full width for images on small screens */
+        height: auto; /* Auto height to maintain aspect ratio */
+    }
+}
